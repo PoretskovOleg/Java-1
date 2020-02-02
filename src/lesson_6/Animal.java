@@ -6,6 +6,11 @@ public abstract class Animal {
     protected float maxSwim;
     protected float maxJump;
     private boolean isAction;
+    public static int countAnimals = 0;
+
+    public Animal() {
+        countAnimals++;
+    }
 
     public void run(float length) {
         this.isAction = length > 0 && length <= this.maxRun;

@@ -6,8 +6,13 @@ public class Task {
 
         Cat cat1 = new Cat(100, 2, 3);
         Cat cat2 = new Cat(10, 0, 0);
+
         Dog dog1 = new Dog(300, 50, 1.5f);
         Dog dog2 = new Dog(100, 20, 0.5f);
+
+        System.out.println("DOGS = " + Dog.countDogs);
+        System.out.println("CATS = " + Cat.countCats);
+        System.out.println("ANIMALS = " + Animal.countAnimals);
 
         System.out.println("==== CAT_1 INFO ====");
         cat1.run(90);
