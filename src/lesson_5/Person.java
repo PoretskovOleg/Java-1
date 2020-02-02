@@ -9,38 +9,26 @@ public class Person {
     private int salary;
     private int age;
 
-    public Person() {
-
-    }
+    public Person() {}
 
     public Person(String name) {
-        this.name = name;
+        this(name, null, null, null, 0, 0);
     }
 
     public Person(String name, String position) {
-        this.name = name;
-        this.position = position;
+        this(name, position, null, null, 0, 0);
     }
 
     public Person(String name, String position, String email) {
-        this.name = name;
-        this.position = position;
-        this.email = email;
+        this(name, position, email, null, 0, 0);
     }
 
     public Person(String name, String position, String email, String phone) {
-        this.name = name;
-        this.phone = phone;
-        this.position = position;
-        this.email = email;
+        this(name, position, email, phone, 0, 0);
     }
 
     public Person(String name, String position, String email, String phone, int age) {
-        this.name = name;
-        this.phone = phone;
-        this.position = position;
-        this.email = email;
-        this.age = age;
+        this(name, position, email, phone, age, 0);
     }
 
     public Person(String name, String position, String email, String phone, int age, int salary) {
@@ -123,6 +111,6 @@ public class Person {
     }
 
     public void printInfo() {
-        System.out.println(toString());
+        System.out.println(this);
     }
 }
